@@ -127,10 +127,7 @@ where continent is not null
 order by 1,2
 
 
--- 2. 
-
--- We take these out as they are not inluded in the above queries and want to stay consistent
--- European Union is part of Europe
+-- 2
 
 Select location, SUM(cast(new_deaths_smoothed as int)) as TotalDeathCount
 From [new portfolio ].[dbo].[CovidDeaths$]
